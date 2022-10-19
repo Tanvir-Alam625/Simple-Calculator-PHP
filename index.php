@@ -12,17 +12,17 @@
         <h2 class="heading">Simple Calculator </h2>
         <form action="" method="post">
             <div class="form-container">
-        <div class="input-cotainer">
-            <input  required type="number" placeholder="Type Your First Number" name="firstNumber"> <br>
-            <input type="number" required placeholder="Type Your Second Number" name="secondNumber">
-        </div>
-        <div class="btn-container">
-            <button class="btn" name="add">Addition</button><br>
-            <button class="btn" name="sub">Subtraction</button><br>
-            <button class="btn" name="multi">Multiplication</button> <br>
-            <button class="btn" name="div">Division</button>
-        </div>
-        </div>
+              <div class="input-cotainer">
+                  <input  required type="number" placeholder="Type Your First Number" name="firstNumber"> <br>
+                  <input type="number" required placeholder="Type Your Second Number" name="secondNumber">
+              </div>
+              <div class="btn-container">
+                  <button class="btn" name="add">Addition</button><br>
+                  <button class="btn" name="sub">Subtraction</button><br>
+                  <button class="btn" name="multi">Multiplication</button> <br>
+                  <button class="btn" name="div">Division</button>
+              </div>
+            </div>
         </form>
         <hr/>
         <div class="output-container">
