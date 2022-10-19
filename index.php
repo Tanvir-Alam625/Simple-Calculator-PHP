@@ -13,27 +13,48 @@
         <form action="" method="post">
             <div class="form-container">
         <div class="input-cotainer">
-            <input type="number" placeholder="Type Your First Number" name="firstNumber"> <br>
-            <input type="number" placeholder="Type Your Second Number" name="secondNumber">
+            <input  required type="number" placeholder="Type Your First Number" name="firstNumber"> <br>
+            <input type="number" required placeholder="Type Your Second Number" name="secondNumber">
         </div>
         <div class="btn-container">
-            <button class="btn">Addition</button><br>
-            <button class="btn">Subtraction</button><br>
-            <button class="btn">Multiplication</button> <br>
-            <button class="btn">Division</button>
+            <button class="btn" name="add">Addition</button><br>
+            <button class="btn" name="sub">Subtraction</button><br>
+            <button class="btn" name="multi">Multiplication</button> <br>
+            <button class="btn" name="div">Division</button>
         </div>
         </div>
         </form>
         <hr/>
         <div class="output-container">
-          <p>Result:-</p>  
+          
           <?php
-          if (isset($_POST)) {
+          if (isset($_POST['firstNumber']) && isset($_POST['secondNumber'])) {
             $firstNumber =$_POST['firstNumber'];
             $secondNumber = $_POST['secondNumber'];
 
-              if (isset($_REQUEST['firstNumber'])) {
-                  echo 'yes value';
+              if (isset($_POST['add'])) {
+                ?>
+                <p>Result:- <?php echo $firstNumber + $secondNumber;?></p>  
+                <?php 
+                  
+              }
+              elseif (isset($_POST['sub'])) {
+                ?>
+                <p>Result:- <?php echo $firstNumber - $secondNumber;?></p>  
+                <?php 
+                  
+              }
+              elseif (isset($_POST['multi'])) {
+                ?>
+                <p>Result:- <?php echo $firstNumber * $secondNumber;?></p>  
+                <?php 
+                  
+              }
+              elseif(isset($_POST['div'])) {
+                ?>
+                <p>Result:- <?php echo $firstNumber / $secondNumber;?></p>  
+                <?php 
+                  
               }
           }
           ?>
