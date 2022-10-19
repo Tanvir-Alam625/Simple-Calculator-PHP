@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #F3F4F6;
+}
+.calculator-container{
+    max-width:800px;
+    margin:100px auto;
+    background-color:white;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 2px lightgray;
+}
+.heading{
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #40536B;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+form{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.input-cotainer{
+    width: 70%;
+    margin-right: 10px;
+}
+input{
+    width: 100%;
+    padding: 15px 30px;
+    margin: 20px 0;
+    border: 0;
+    border-radius: 7px;
+    border:1px solid gainsboro;
+    outline: none;
+    font-size: 20px;
+    color: #40536B;
+    letter-spacing: 1px;
+}
+input:focus{
+    border: 2px solid #40536B ;
+}
+.btn-container{
+    width: 30%;
+}
+.btn{
+    color: #40536B;
+    font-size: 20px;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    background-color: gainsboro;
+    border-radius: 7px;
+    border: 0.5px solid gainsboro;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.btn:hover{
+background-color: #40536B;
+color: white;
+}
+hr{
+    color: gainsboro;
+}
+.output-container p{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: #40536B;
+}
